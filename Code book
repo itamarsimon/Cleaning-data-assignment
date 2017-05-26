@@ -1,8 +1,8 @@
-Code Book []
+Code Book
 
-subject column - The tidy dataset contains data from 30 volunteers which are represented in the column subject
+* subject column - The tidy dataset contains data from 30 volunteers which are represented in the column subject
 
-activity column - The tidy dataset contains data from 6 activities (Walking, Walking upstairs, Walking downstairs, Sitting, Standing, Laying) the volunteers preformed in the experiment. 
+* activity column - The tidy dataset contains data from 6 activities (Walking, Walking upstairs, Walking downstairs, Sitting, Standing, Laying) the volunteers preformed in the experiment. 
 
 The features selected for this database come from the accelerometer sensor and gyroscope sensor 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
