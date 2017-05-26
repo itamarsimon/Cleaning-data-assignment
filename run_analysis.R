@@ -67,10 +67,17 @@ train_final <- select(eliminate_train, contains("subject"), contains("activity")
 test_train_final <- bind_rows(train_final, test_final) %>% tbl_df()
 
 # tidy the clean dataset
-tidy_data <- group_by(test_train_final, subject, activity) %>% summarise_each(funs(mean))
+tidy_data <- group_by(test_train_final, subject, activity) %>% 
+  summarise_each(funs(mean)) 
+  names(tidy_data) <- gsub("\\()-", "", names(tidy_data)) 
+  names(tidy_data) <- gsub("\\-", "", names(tidy_data)) 
+  names(tidy_data) <- gsub("\\()","", names(tidy_data))
+  
 
 # Write a new text dataset
-write.table(tidy_data, "final_tidy.txt", row.names = FALSE)
+write.table(tidy_data, "final_tidy.txt", row.names = FALSE) 
+  
 
 # verify file - should have 180 rows (6 activities times 30 subjects) with 88 variables
 verify <- read.table("./final_tidy.txt", quote = "\"", header = TRUE)
+
