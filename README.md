@@ -8,9 +8,9 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 * The experiment was made with 30 volunteers who which their corresponding measurements are presented in the "test" and "train" datasets in the subject_test.txt and subject_train.txt files.
 * The volunteers went through 6 types of activities which are presented in the activity_labels.txt file.
 * the corresponding activities measurements are presented in the corresponding "test and "train" datasets in the y_test.txt and y_train.txt files
-* 
 
-In the run_analysis script, the following takes place
+
+## In the run_analysis script, the following takes place
 ### Load libraries
 * Load libraries for R script ("dplyr", "tidyr")
 
@@ -23,14 +23,14 @@ In the run_analysis script, the following takes place
 ### Read variables for later use
 * Read the variables into a table which will be used later for merging the datasets
 
-### "test dataset
+### "test" dataset
 * Merge test activity and subject and replace values of activity with descriptive measures
 * Read test dataset and change variable names to match features dataset
 * Bind test dataset with activity and subject
 * Eliminate first column to avoid error
 * Filter only necessary columns
 
-### "train dataset
+### "train" dataset
 * Merge train activity and subject and replace values of activity with descriptive measures
 * Read train dataset and change variable names to match features dataset
 * Bind train dataset with activity and subject
